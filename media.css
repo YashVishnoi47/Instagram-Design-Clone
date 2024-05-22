@@ -1,0 +1,62 @@
+/* Existing CSS */
+
+/* Style for the toggle button */
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Responsive styles for max-width 950px */
+@media (max-width: 950px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-right-panel {
+    display: none;
+    width: 250px; /* Adjust width as needed */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border-right: 1px solid #262626;
+    z-index: 999;
+    flex-direction: column;
+  }
+
+  .nav-right-panel.active {
+    display: flex;
+  }
+
+  .nav-right-panel .navigation-buttons {
+    flex-direction: column;
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  .nav-right-panel .navigation-buttons a {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .nav-right-panel .more {
+    position: static;
+    margin-top: 10px;
+  }
+
+
+  .right-panel{
+    display: none;
+  }
+}
